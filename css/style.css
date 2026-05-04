@@ -7,15 +7,16 @@
 
 /* === TOKENS === */
 :root {
-  --c-dark:       #111110;
+  --c-dark:       #0e0e0e;
   --c-bg:         #f5f5f5;
   --c-white:      #ffffff;
-  --c-accent:     #ffe09d;
-  --c-accent-lt:  #ffd166;
-  --c-gray:       #666560;
-  --c-mid:        #9a9890;
+  --c-accent:     #ffd166;   /* yellow — primary highlight */
+  --c-accent-lt:  #ffd166;   /* same yellow for consistency */
+  --c-accent-dim: rgba(255,209,102,0.18); /* subtle yellow tint */
+  --c-gray:       #5a5a5a;
+  --c-mid:        #969696;
   --c-light:      #e0e0e0;
-  --c-alt:        #eeeeee;
+  --c-alt:        #ebebeb;
 
   --font-display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
   --font-body:    'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -357,7 +358,7 @@ html[lang="en"] .lang-ro { display: none !important; }
 
 .p-card__img {
   width: 100%; height: 100%; object-fit: cover;
-  transition: transform var(--dur-slow) var(--ease);
+  transition: transform var(--dur-slow) var(--ease), filter var(--dur-slow) var(--ease);
 }
 .p-card:hover .p-card__img { transform: scale(1.06); }
 
@@ -412,7 +413,7 @@ html[lang="en"] .lang-ro { display: none !important; }
 
 /* === ABOUT TEASER === */
 .about-split { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-2xl); align-items: center; }
-.about-img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+.about-img { width: 100%; aspect-ratio: 3/4; object-fit: cover; transition: filter var(--dur-slow) var(--ease); }
 .about-text { padding: var(--sp-md) 0; }
 .about-text p { color: var(--c-gray); line-height: 1.8; margin-bottom: var(--sp-sm); }
 .about-stats {
@@ -426,7 +427,7 @@ html[lang="en"] .lang-ro { display: none !important; }
 /* === TEAM === */
 .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-md); }
 .team-card__photo { aspect-ratio: 3/4; overflow: hidden; margin-bottom: var(--sp-xs); }
-.team-card__img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform var(--dur-slow) var(--ease); }
+.team-card__img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform var(--dur-slow) var(--ease), filter var(--dur-slow) var(--ease); }
 .team-card:hover .team-card__img { transform: scale(1.04); }
 .team-card__name { font-family: var(--font-display); font-size: var(--fs-lg); }
 .team-card__role { font-size: var(--fs-xs); color: var(--c-mid); margin-top: 0.2em; letter-spacing: 0.04em; }
@@ -434,7 +435,7 @@ html[lang="en"] .lang-ro { display: none !important; }
 /* === BLOG === */
 .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-md); }
 .b-card__thumb { aspect-ratio: 16/10; overflow: hidden; margin-bottom: var(--sp-sm); }
-.b-card__img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-slow) var(--ease); }
+.b-card__img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-slow) var(--ease), filter var(--dur-slow) var(--ease); }
 .b-card:hover .b-card__img { transform: scale(1.04); }
 .b-card__meta { font-size: var(--fs-xs); color: var(--c-mid); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: var(--sp-2xs); }
 .b-card__title { font-family: var(--font-display); font-size: var(--fs-xl); font-weight: 400; line-height: 1.2; transition: color var(--dur); }
@@ -529,7 +530,7 @@ html[lang="en"] .lang-ro { display: none !important; }
 .gallery__item { overflow: hidden; }
 .gallery__item--wide { grid-column: span 2; }
 .gallery__item--tall { grid-row: span 2; }
-.gallery__img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform var(--dur-slow) var(--ease); }
+.gallery__img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform var(--dur-slow) var(--ease), filter var(--dur-slow) var(--ease); }
 .gallery__img:hover { transform: scale(1.03); }
 
 .project-nav {
@@ -539,8 +540,8 @@ html[lang="en"] .lang-ro { display: none !important; }
   display: block; position: relative; aspect-ratio: 16/7;
   overflow: hidden; background: var(--c-dark);
 }
-.project-nav__img { width: 100%; height: 100%; object-fit: cover; opacity: 0.45; transition: opacity var(--dur), transform var(--dur-slow) var(--ease); }
-.project-nav__item:hover .project-nav__img { opacity: 0.35; transform: scale(1.04); }
+.project-nav__img { width: 100%; height: 100%; object-fit: cover; opacity: 0.45; transition: opacity var(--dur), transform var(--dur-slow) var(--ease), filter var(--dur-slow) var(--ease); }
+.project-nav__item:hover .project-nav__img { opacity: 0.55; transform: scale(1.04); }
 .project-nav__label {
   position: absolute; inset: 0; display: flex; flex-direction: column;
   justify-content: flex-end; padding: var(--sp-md); color: var(--c-white);
@@ -609,7 +610,7 @@ html[lang="en"] .lang-ro { display: none !important; }
 /* === JOURNAL PAGE === */
 .journal-featured { display: grid; grid-template-columns: 1.4fr 1fr; gap: var(--sp-xl); align-items: center; margin-bottom: var(--sp-2xl); padding-bottom: var(--sp-2xl); border-bottom: 1px solid var(--c-light); }
 .journal-featured__img-wrap { aspect-ratio: 16/10; overflow: hidden; }
-.journal-featured__img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-slow) var(--ease); }
+.journal-featured__img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-slow) var(--ease), filter var(--dur-slow) var(--ease); }
 .journal-featured:hover .journal-featured__img { transform: scale(1.03); }
 .journal-featured__tag { font-size: var(--fs-xs); letter-spacing: 0.1em; text-transform: uppercase; color: var(--c-mid); margin-bottom: var(--sp-xs); }
 .journal-featured__title { font-family: var(--font-display); font-size: var(--fs-3xl); font-weight: 400; line-height: 1.1; margin-bottom: var(--sp-sm); transition: color var(--dur); }
@@ -647,7 +648,7 @@ html[lang="en"] .lang-ro { display: none !important; }
 .pm__item--tall { grid-row: span 2; aspect-ratio: auto; }
 .pm__img {
   width: 100%; height: 100%; object-fit: cover; display: block;
-  transition: transform var(--dur-slow) var(--ease);
+  transition: transform var(--dur-slow) var(--ease), filter var(--dur-slow) var(--ease);
 }
 .pm__item:hover .pm__img { transform: scale(1.06); }
 @media (max-width: 768px) {
@@ -723,4 +724,72 @@ html[lang="en"] .lang-ro { display: none !important; }
   .about-stats { flex-direction: column; gap: var(--sp-md); }
   .team-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================================================
+   B&W IMAGE TREATMENT
+   All photographs start in greyscale; hover restores colour.
+   Hero backgrounds remain greyscale (always behind dark overlay).
+   ============================================================ */
+
+/* Hero & page-hero backgrounds — always greyscale */
+.hero__bg,
+.page-hero__bg {
+  filter: grayscale(100%);
+  transition: filter var(--dur-slow) var(--ease), transform var(--dur-slow) var(--ease);
+}
+
+/* All interactive image containers — greyscale by default */
+.p-card__img,
+.gallery__img,
+.pm__img,
+.team-card__img,
+.b-card__img,
+.journal-featured__img,
+.project-nav__img {
+  filter: grayscale(100%);
+}
+
+/* About / services standalone images */
+.about-img {
+  filter: grayscale(100%);
+  transition: filter var(--dur-slow) var(--ease);
+}
+.services-hero-grid img {
+  filter: grayscale(100%);
+  transition: filter var(--dur-slow) var(--ease);
+}
+
+/* ── Colour reveal on hover ──────────────────────────────── */
+.p-card:hover .p-card__img                         { filter: grayscale(0%); }
+.gallery__item:hover .gallery__img                  { filter: grayscale(0%); }
+.pm__item:hover .pm__img                            { filter: grayscale(0%); }
+.team-card:hover .team-card__img                    { filter: grayscale(0%); }
+.b-card:hover .b-card__img                          { filter: grayscale(0%); }
+.journal-featured:hover .journal-featured__img      { filter: grayscale(0%); }
+.project-nav__item:hover .project-nav__img          { filter: grayscale(0%); }
+
+/* About image — hoverable on its own */
+.about-img:hover                                    { filter: grayscale(0%); }
+
+/* Services images — hover the grid cell */
+.services-hero-grid > div:hover img                 { filter: grayscale(0%); }
+
+/* ── Yellow accent on hover for portfolio card overlay tint ─ */
+.p-card:hover .p-card__overlay {
+  background: linear-gradient(
+    to top,
+    rgba(17,14,5,0.88) 0%,
+    rgba(255,209,102,0.06) 60%,
+    transparent 100%
+  );
+}
+
+/* ── Yellow underline on active nav link ─────────────────── */
+.nav__link.active::after { background: var(--c-accent); }
+
+/* ── Accent colour tweaks for strict B&W pages ───────────── */
+.divider { background: var(--c-accent); }
+.pkg__tier { color: var(--c-accent); }
+.pkg__feat::before { color: var(--c-accent); }
+.svc-item::before { color: var(--c-accent); }
 
