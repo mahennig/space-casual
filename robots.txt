@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /assets/images/shared/
+Allow: /assets/images/shared/logo-header.png
+Allow: /assets/images/shared/logo-footer.png
+
+Sitemap: https://spacecasuals.ro/sitemap.xml
