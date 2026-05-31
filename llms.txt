@@ -1,0 +1,35 @@
+# Space Casuals
+
+> Studio de arhitectura si design interior din Bucuresti, Romania. Proiecte rezidentiale, comerciale si retail — de la concept la executie.
+
+Space Casuals este un studio boutique de arhitectura si design interior fondat de Arh. Ioana Radu. Oferim servicii complete de design, de la concept initial pana la coordonarea executiei, cu un accent pe solutii personalizate, functionale si estetice.
+
+## Servicii
+
+- [Proiect de Design Interior](https://spacecasuals.ro/services/) — Proiect complet: concept, 3D, planuri tehnice, management executie.
+- [Design Punctual](https://spacecasuals.ro/services/) — Consultanta si solutii pentru spatii sau probleme specifice.
+- [Consultanta Design Interior](https://spacecasuals.ro/services/) — Sesiune de consultanta online sau la fata locului.
+- [Fast Interior Design Project](https://spacecasuals.ro/services/) — Proiect rapid pentru apartamente mici sau spatii bine definite.
+- [Personal Shopper](https://spacecasuals.ro/services/) — Selectia mobilierului si accesoriilor potrivite pentru spatiul tau.
+
+## Portofoliu
+
+- [Apartament Busteni](https://spacecasuals.ro/portfolio/apartament-busteni/) — Amenajare apartament rezidential, Busteni.
+- [Casa Selaru](https://spacecasuals.ro/portfolio/casa-selaru/) — Proiect rezidential casa individuala.
+- [KUIB Restaurant](https://spacecasuals.ro/portfolio/kuib/) — Design interior restaurant, Bucuresti.
+- [Siriului Office](https://spacecasuals.ro/portfolio/siriului-office/) — Amenajare spatiu de birouri.
+- [Softescu 2.0](https://spacecasuals.ro/portfolio/softescu-2-0/) — Redesign birou tech company.
+- [STR Rezidential](https://spacecasuals.ro/portfolio/str-rezidential/) — Amenajare apartament pentru inchiriere pe termen scurt.
+- [Studio Alb](https://spacecasuals.ro/portfolio/studio-alb/) — Amenajare studio minimalist.
+- [The Craftsman Workshop](https://spacecasuals.ro/portfolio/the-craftsman-workshop/) — Design atelier creativ.
+
+## Informatii generale
+
+- [Despre noi](https://spacecasuals.ro/about/) — Echipa si filozofia Space Casuals.
+- [Contact](https://spacecasuals.ro/contact/) — hello@spacecasuals.ro | Str. Poiana Narciselor, nr.14, ap.24, Bucuresti
+- [Blog](https://spacecasuals.ro/blog/) — Articole despre design interior, tendinte si proiecte.
+
+## Optional
+
+- [Sitemap](https://spacecasuals.ro/sitemap.xml)
+
